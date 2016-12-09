@@ -29,7 +29,7 @@ library(dplyr)
 statins <- read.csv("~/statins.csv")
 
 ## read in our dataset of practices
-practices <- read.csv("~/unique_practices_latest.csv")
+practices <- read.csv("~/../unique_practices_latest.csv")
 
 ## We now have to work out which are the most costly statins, based on their *per quantity* cost (i.e. number of actual tablets).
 ## The 'high-cost' variants need to be hand-picked out of this analysis. This is just to show how they were calculated.
