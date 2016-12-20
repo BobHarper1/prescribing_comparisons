@@ -88,36 +88,35 @@ cerazette_lcg = analysis %>%
   ggplot()+
   geom_line(aes(date, measure, group=LCG, colour=LCG))
 
-## For each LCG, we can create charts for each practice with their measure judged against the NI median
- belfast_KTT9 = subset(analysis, LCG == 'Belfast') %>% select(date, practice, measure) %>% 
+ belfast_cerazette = subset(analysis, LCG == 'Belfast') %>% select(date, practice, measure) %>% 
    ggplot(aes(date, measure, group=practice, colour="Measure"))+ 
    geom_line()+ 
    geom_line(data = percentiles, aes(date, Measure, group=stat, linetype=stat, colour="Quantiles"))+
    scale_linetype_manual(values=c('dotted', 'dotted', 'dotted', 'dotted', 'dashed', 'dotted', 'dotted', 'dotted', 'dotted'))+
    facet_wrap(~ practice, ncol = 5, scales='free_y')
  
- south_KTT9 = subset(analysis, LCG == 'Southern') %>% select(date, practice, measure) %>% 
+ south_cerazette = subset(analysis, LCG == 'Southern') %>% select(date, practice, measure) %>% 
    ggplot(aes(date, measure, group=practice, colour="Measure"))+ 
    geom_line()+ 
    geom_line(data = percentiles, aes(date, Measure, group=stat, linetype=stat, colour="Quantiles"))+
    scale_linetype_manual(values=c('dotted', 'dotted', 'dotted', 'dotted', 'dashed', 'dotted', 'dotted', 'dotted', 'dotted'))+
    facet_wrap(~ practice, ncol = 5, scales='free_y')
  
- southEast_KTT9 = subset(analysis, LCG == 'South Eastern') %>% select(date, practice, measure) %>% 
+ southEast_cerazette = subset(analysis, LCG == 'South Eastern') %>% select(date, practice, measure) %>% 
    ggplot(aes(date, measure, group=practice, colour="Measure"))+ 
    geom_line()+ 
    geom_line(data = percentiles, aes(date, Measure, group=stat, linetype=stat, colour="Quantiles"))+
    scale_linetype_manual(values=c('dotted', 'dotted', 'dotted', 'dotted', 'dashed', 'dotted', 'dotted', 'dotted', 'dotted'))+
    facet_wrap(~ practice, ncol = 5, scales='free_y')
  
- north_KTT9 = subset(analysis, LCG == 'Northern') %>% select(date, practice, measure) %>% 
+ north_cerazette = subset(analysis, LCG == 'Northern') %>% select(date, practice, measure) %>% 
    ggplot(aes(date, measure, group=practice, colour="Measure"))+ 
    geom_line()+ 
    geom_line(data = percentiles, aes(date, Measure, group=stat, linetype=stat, colour="Quantiles"))+
    scale_linetype_manual(values=c('dotted', 'dotted', 'dotted', 'dotted', 'dashed', 'dotted', 'dotted', 'dotted', 'dotted'))+
    facet_wrap(~ practice, ncol = 5, scales='free_y')
  
- west_KTT9 = subset(analysis, LCG == 'Western') %>% select(date, practice, measure) %>% 
+ west_cerazette = subset(analysis, LCG == 'Western') %>% select(date, practice, measure) %>% 
    ggplot(aes(date, measure, group=practice, colour="Measure"))+ 
    geom_line()+ 
    geom_line(data = percentiles, aes(date, Measure, group=stat, linetype=stat, colour="Quantiles"))+

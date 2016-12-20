@@ -35,15 +35,13 @@ practices <- read.csv("~/../unique_practices_latest.csv")
 ## The 'high-cost' variants need to be hand-picked out of this analysis. This is just to show how they were calculated.
 statins_cost_analysis = statins %>%
   subset(date >= '2016-01-01') %>%
-  mutate(bnf_name = ifelse(is.na(amp_nm), paste(vmp_nm), paste(amp_nm))) %>%
   group_by(bnf_code, bnf_name) %>%
   summarise(total_cost = sum(actual_cost),
             total_quantity = sum(total_quantity)
     ) %>%
   mutate(cost_per_dosage = round(total_cost/total_quantity, 2))
 
-## We have determined the high-cost statins. See the "statins_costs.csv" file. 
-## They are:
+## We have determined the high-cost statins. They are:
 ##      *Rosuvastatin/Crestor
 ##      *Inegy
 ##      *Lipitor
@@ -59,7 +57,7 @@ statins_cost_analysis = statins %>%
 ## Their BNF code regular expression patterns begin with 0212000 and the following:
 high_cost_codes <- c('AA','ACBB','B0BB','M0BB','ACAAA','B0AAAALAL','B0AAAMAM','B0AAAANAN','B0AAADAD','M0AAADAD','M0BC','X0BB','Y0AAAKAK','Y0AAALAL','Y0BB')
 
-## Low-cost: Atorvastatin, Fluvastatin, Simvastatin, Pravastatin.
+## Low-cost: all other presentations of Atorvastatin, Fluvastatin, Simvastatin, Pravastatin.
 
 high_cost = function(field){grepl(paste('^0212000',high_cost_codes,'.*', sep="", collapse='|'), field)}
 all_statins = function(field){grepl('^0212.*', field)}
@@ -121,3 +119,38 @@ statins_lcg = statin_analysis %>%
   arrange(date) %>%
   ggplot()+
   geom_line(aes(date, measure, group=LCG, colour=LCG))
+
+belfast_statins = subset(analysis, LCG == 'Belfast') %>% select(date, practice, measure) %>%
+  ggplot(aes(date, measure, group=practice, colour="Measure"))+
+  geom_line()+
+  geom_line(data = percentiles, aes(date, Measure, group=stat, linetype=stat, colour="Quantiles"))+
+  scale_linetype_manual(values=c('dotted', 'dotted', 'dotted', 'dotted', 'dashed', 'dotted', 'dotted', 'dotted', 'dotted'))+
+  facet_wrap(~ practice, ncol = 5, scales='free_y')
+
+south_statins = subset(analysis, LCG == 'Southern') %>% select(date, practice, measure) %>%
+  ggplot(aes(date, measure, group=practice, colour="Measure"))+
+  geom_line()+
+  geom_line(data = percentiles, aes(date, Measure, group=stat, linetype=stat, colour="Quantiles"))+
+  scale_linetype_manual(values=c('dotted', 'dotted', 'dotted', 'dotted', 'dashed', 'dotted', 'dotted', 'dotted', 'dotted'))+
+  facet_wrap(~ practice, ncol = 5, scales='free_y')
+
+southEast_statins = subset(analysis, LCG == 'South Eastern') %>% select(date, practice, measure) %>%
+  ggplot(aes(date, measure, group=practice, colour="Measure"))+
+  geom_line()+
+  geom_line(data = percentiles, aes(date, Measure, group=stat, linetype=stat, colour="Quantiles"))+
+  scale_linetype_manual(values=c('dotted', 'dotted', 'dotted', 'dotted', 'dashed', 'dotted', 'dotted', 'dotted', 'dotted'))+
+  facet_wrap(~ practice, ncol = 5, scales='free_y')
+
+north_statins = subset(analysis, LCG == 'Northern') %>% select(date, practice, measure) %>%
+  ggplot(aes(date, measure, group=practice, colour="Measure"))+
+  geom_line()+
+  geom_line(data = percentiles, aes(date, Measure, group=stat, linetype=stat, colour="Quantiles"))+
+  scale_linetype_manual(values=c('dotted', 'dotted', 'dotted', 'dotted', 'dashed', 'dotted', 'dotted', 'dotted', 'dotted'))+
+  facet_wrap(~ practice, ncol = 5, scales='free_y')
+
+west_statins = subset(analysis, LCG == 'Western') %>% select(date, practice, measure) %>%
+  ggplot(aes(date, measure, group=practice, colour="Measure"))+
+  geom_line()+
+  geom_line(data = percentiles, aes(date, Measure, group=stat, linetype=stat, colour="Quantiles"))+
+  scale_linetype_manual(values=c('dotted', 'dotted', 'dotted', 'dotted', 'dashed', 'dotted', 'dotted', 'dotted', 'dotted'))+
+  facet_wrap(~ practice, ncol = 5, scales='free_y')

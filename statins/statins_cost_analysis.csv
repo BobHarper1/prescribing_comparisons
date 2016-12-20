@@ -1,51 +1,52 @@
-bnf_code,bnf_name, total_cost , total_quantity , cost_per_dosage ,high_cost
-0212000AAAAAAAA,Rosuvastatin 10mg tablets," £1,372,558.42 "," 2,366,102 ", £0.58 ,1
-0212000AAAAABAB,Rosuvastatin 20mg tablets," £1,208,435.11 "," 1,442,982 ", £0.84 ,1
-0212000AAAAACAC,Rosuvastatin 40mg tablets," £196,116.67 "," 205,104 ", £0.96 ,1
-0212000AAAAADAD,Rosuvastatin 5mg tablets," £552,814.98 "," 953,272 ", £0.58 ,1
-0212000AABBAAAA,Crestor 10mg tablets," £71,572.79 "," 123,300 ", £0.58 ,1
-0212000AABBABAB,Crestor 20mg tablets," £51,954.95 "," 62,036 ", £0.84 ,1
-0212000AABBACAC,Crestor 40mg tablets," £9,381.03 "," 9,811 ", £0.96 ,1
-0212000AABBADAD,Crestor 5mg tablets," £21,427.31 "," 36,895 ", £0.58 ,1
-0212000ACAAAAAA,Simvastatin 20mg / Ezetimibe 10mg tablets," £17,355.78 "," 16,140 ", £1.08 ,1
-0212000ACAAABAB,Simvastatin 40mg / Ezetimibe 10mg tablets," £39,321.11 "," 31,400 ", £1.25 ,1
-0212000ACAAACAC,Simvastatin 80mg / Ezetimibe 10mg tablets," £4,739.41 "," 3,573 ", £1.33 ,1
-0212000ACBBAAAA,Inegy 10mg/20mg tablets," £5,693.90 "," 5,276 ", £1.08 ,1
-0212000ACBBABAB,Inegy 10mg/40mg tablets," £7,658.83 "," 6,111 ", £1.25 ,1
-0212000ACBBACAC,Inegy 10mg/80mg tablets, £137.30 , 105 , £1.31 ,1
-0212000B0AAAAAA,Atorvastatin 10mg tablets," £175,967.90 "," 5,533,195 ", £0.03 ,0
-0212000B0AAABAB,Atorvastatin 20mg tablets," £428,682.83 "," 11,438,050 ", £0.04 ,0
-0212000B0AAACAC,Atorvastatin 40mg tablets," £556,179.64 "," 12,867,502 ", £0.04 ,0
-0212000B0AAADAD,Atorvastatin 80mg tablets," £104,289.72 "," 1,420,995 ", £0.07 ,0
-0212000B0AAALAL,Atorvastatin 10mg chewable tablets sugar free," £5,018.83 "," 12,119 ", £0.41 ,1
-0212000B0AAAMAM,Atorvastatin 20mg chewable tablets sugar free," £14,720.95 "," 18,603 ", £0.79 ,1
-0212000B0AAANAN,Atorvastatin 30mg tablets," £9,123.66 "," 11,572 ", £0.79 ,1
-0212000B0AAAPAP,Atorvastatin 60mg tablets," £27,083.62 "," 30,053 ", £0.90 ,1
-0212000B0BBAAAA,Lipitor 10mg tablets," £25,503.33 "," 60,925 ", £0.42 ,1
-0212000B0BBABAB,Lipitor 20mg tablets," £48,597.64 "," 61,289 ", £0.79 ,1
-0212000B0BBACAC,Lipitor 40mg tablets," £36,359.45 "," 45,841 ", £0.79 ,1
-0212000B0BBADAD,Lipitor 80mg tablets," £5,162.02 "," 5,688 ", £0.91 ,1
-0212000B0BBAEAL,Lipitor 10mg chewable tablets, £699.34 ," 1,692 ", £0.41 ,1
-0212000B0BBAFAM,Lipitor 20mg chewable tablets, £690.19 , 864 , £0.80 ,1
-0212000M0AAAAAA,Fluvastatin 20mg capsules," £4,326.23 "," 59,206 ", £0.07 ,0
-0212000M0AAABAB,Fluvastatin 40mg capsules," £4,417.32 "," 54,678 ", £0.08 ,0
-0212000M0AAADAD,Fluvastatin 80mg modified-release tablets," £8,989.95 "," 14,529 ", £0.62 ,1
-0212000M0BBAAAA,Lescol 20mg capsules, £618.35 ," 1,254 ", £0.49 ,1
-0212000M0BBABAB,Lescol 40mg capsules," £1,123.05 "," 2,289 ", £0.49 ,1
-0212000M0BBACAD,Lescol XL 80mg tablets," £1,920.30 "," 3,100 ", £0.62 ,1
-0212000M0BCAAAD,Luvinsta XL 80mg tablets, £161.83 , 264 , £0.61 ,1
-0212000X0AAAAAA,Pravastatin 10mg tablets," £9,651.40 "," 311,681 ", £0.03 ,0
-0212000X0AAABAB,Pravastatin 20mg tablets," £26,356.40 "," 712,366 ", £0.04 ,0
-0212000X0AAADAD,Pravastatin 40mg tablets," £81,646.86 "," 1,719,910 ", £0.05 ,0
-0212000X0BBAAAA,Lipostat 10mg tablets, £330.45 , 725 , £0.46 ,1
-0212000X0BBABAB,Lipostat 20mg tablets," £1,077.72 "," 1,289 ", £0.84 ,1
-0212000X0BBACAD,Lipostat 40mg tablets," £1,855.02 "," 2,212 ", £0.84 ,1
-0212000Y0AAAAAA,Simvastatin 10mg tablets," £24,194.58 "," 1,059,913 ", £0.02 ,0
-0212000Y0AAABAB,Simvastatin 20mg tablets," £148,001.73 "," 5,692,342 ", £0.03 ,0
-0212000Y0AAADAD,Simvastatin 40mg tablets," £484,647.11 "," 16,722,624 ", £0.03 ,0
-0212000Y0AAAHAH,Simvastatin 80mg tablets," £1,933.70 "," 34,204 ", £0.06 ,0
-0212000Y0AAAKAK,Simvastatin 20mg/5ml oral suspension sugar free," £59,148.30 "," 82,762 ", £0.71 ,1
-0212000Y0AAALAL,Simvastatin 40mg/5ml oral suspension sugar free," £119,974.85 "," 109,858 ", £1.09 ,1
-0212000Y0BBAAAA,Zocor 10mg tablets," £2,447.52 "," 4,229 ", £0.58 ,1
-0212000Y0BBABAB,Zocor 20mg tablets," £4,438.30 "," 4,642 ", £0.96 ,1
-0212000Y0BBACAD,Zocor 40mg tablets," £3,185.80 "," 3,338 ", £0.95 ,1
+"bnf_code","bnf_name","total_cost","total_quantity","cost_per_dosage"
+"0212000AAAAAAAA","Rosuvastatin 10mg tablets",1521062.08,2621995,0.58
+"0212000AAAAABAB","Rosuvastatin 20mg tablets",1337082.95,1596558,0.84
+"0212000AAAAACAC","Rosuvastatin 40mg tablets",217242.21,227184,0.96
+"0212000AAAAADAD","Rosuvastatin 5mg tablets",615645.6,1061579,0.58
+"0212000AABBAAAA","Crestor 10mg tablets",78618.24,135441,0.58
+"0212000AABBABAB","Crestor 20mg tablets",57101.52,68186,0.84
+"0212000AABBACAC","Crestor 40mg tablets",10355.13,10827,0.96
+"0212000AABBADAD","Crestor 5mg tablets",24022.17,41363,0.58
+"0212000ACAAAAAA","Simvastatin 20mg / Ezetimibe 10mg tablets",18871.73,17551,1.08
+"0212000ACAAABAB","Simvastatin 40mg / Ezetimibe 10mg tablets",43038.75,34368,1.25
+"0212000ACAAACAC","Simvastatin 80mg / Ezetimibe 10mg tablets",5164.39,3891,1.33
+"0212000ACBBAAAA","Inegy 10mg/20mg tablets",6337.09,5872,1.08
+"0212000ACBBABAB","Inegy 10mg/40mg tablets",8396.55,6699,1.25
+"0212000ACBBACAC","Inegy 10mg/80mg tablets",137.3,105,1.31
+"0212000B0AAAAAA","Atorvastatin 10mg tablets",193401.44,6141761,0.03
+"0212000B0AAABAB","Atorvastatin 20mg tablets",473284.02,12770166,0.04
+"0212000B0AAACAC","Atorvastatin 40mg tablets",613343.96,14299426,0.04
+"0212000B0AAADAD","Atorvastatin 80mg tablets",115068.47,1585944,0.07
+"0212000B0AAALAL","Atorvastatin 10mg chewable tablets sugar free",5574.48,13459,0.41
+"0212000B0AAAMAM","Atorvastatin 20mg chewable tablets sugar free",15983.26,20201,0.79
+"0212000B0AAANAN","Atorvastatin 30mg tablets",10118.23,12834,0.79
+"0212000B0AAAPAP","Atorvastatin 60mg tablets",30004.9,33294,0.9
+"0212000B0BBAAAA","Lipitor 10mg tablets",28411.58,67869,0.42
+"0212000B0BBABAB","Lipitor 20mg tablets",53770.7,67813,0.79
+"0212000B0BBACAC","Lipitor 40mg tablets",40221.98,50705,0.79
+"0212000B0BBADAD","Lipitor 80mg tablets",5622.39,6195,0.91
+"0212000B0BBAEAL","Lipitor 10mg chewable tablets",759.64,1838,0.41
+"0212000B0BBAFAM","Lipitor 20mg chewable tablets",714.36,894,0.8
+"0212000M0AAAAAA","Fluvastatin 20mg capsules",4754.73,65286,0.07
+"0212000M0AAABAB","Fluvastatin 40mg capsules",4897.81,60746,0.08
+"0212000M0AAADAD","Fluvastatin 80mg modified-release tablets",9907.64,16013,0.62
+"0212000M0BBAAAA","Lescol 20mg capsules",701.8,1422,0.49
+"0212000M0BBABAB","Lescol 40mg capsules",1274.12,2597,0.49
+"0212000M0BBACAD","Lescol XL 80mg tablets",2043.12,3298,0.62
+"0212000M0BCAAAD","Luvinsta XL 80mg tablets",179.17,292,0.61
+"0212000X0AAAAAA","Pravastatin 10mg tablets",10644.01,345576,0.03
+"0212000X0AAABAB","Pravastatin 20mg tablets",29052.21,788498,0.04
+"0212000X0AAADAD","Pravastatin 40mg tablets",89678.01,1902062,0.05
+"0212000X0BBAAAA","Lipostat 10mg tablets",330.45,725,0.46
+"0212000X0BBABAB","Lipostat 20mg tablets",1077.72,1289,0.84
+"0212000X0BBACAD","Lipostat 40mg tablets",1855.02,2212,0.84
+"0212000Y0AAAAAA","Simvastatin 10mg tablets",26566.14,1169886,0.02
+"0212000Y0AAABAB","Simvastatin 20mg tablets",162702.13,6293120,0.03
+"0212000Y0AAADAD","Simvastatin 40mg tablets",530949.35,18434912,0.03
+"0212000Y0AAAHAH","Simvastatin 80mg tablets",2122.03,37689,0.06
+"0212000Y0AAAKAK","Simvastatin 20mg/5ml oral suspension sugar free",65471.05,91607,0.71
+"0212000Y0AAALAL","Simvastatin 40mg/5ml oral suspension sugar free",132564.5,121372,1.09
+"0212000Y0BBAAAA","Zocor 10mg tablets",2593.17,4481,0.58
+"0212000Y0BBABAB","Zocor 20mg tablets",5348.86,5594,0.96
+"0212000Y0BBACAD","Zocor 40mg tablets",3744.74,3926,0.95
+NA,"Fenofibrate 145mg / Simvastatin 40mg tablets",14.51,59,0.25
